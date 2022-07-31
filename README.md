@@ -1,2 +1,2 @@
 # DinopassPy
- Wrapper for dinopass to pull a password
+ Pull a new strong password from Dinopass and copy to clipboard. 
