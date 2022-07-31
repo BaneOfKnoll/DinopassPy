@@ -1,10 +1,16 @@
 import requests
 import clipboard
 
-strong_url= "http://www.dinopass.com/password/strong"
+multiple = input("Do you want more than 1?")
 
-strongPass = requests.get(strong_url)
-
-clipboard.copy(str(strongPass.text))
-
-print(str(strongPass.text))
+if multiple == "yes":
+    amount = input("How many?")
+    for x in range(int(amount)):
+        strong_url= "http://www.dinopass.com/password/strong"
+        strongPass = requests.get(strong_url)
+        print(str(strongPass.text))
+else:
+    strong_url= "http://www.dinopass.com/password/strong"
+    strongPass = requests.get(strong_url)
+    print(str(strongPass.text))
+    clipboard.copy(str(strongPass.text))
