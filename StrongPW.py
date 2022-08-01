@@ -1,9 +1,9 @@
 import requests
 import clipboard
 
-multiple = input("Do you want more than 1?")
+multiple = input("Do you want more than 1? (y/n)")
 
-if multiple == "yes":
+if multiple == "y":
     amount = input("How many?")
     for x in range(int(amount)):
         strong_url= "http://www.dinopass.com/password/strong"
